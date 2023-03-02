@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private EditText et1,et2;
-    private RadioButton r1,r2;
+    private RadioButton r1,r2,r3,r4;
     private TextView tv1;
 
     @Override
@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         et2=findViewById(R.id.et2);
         r1=findViewById(R.id.rb1);
         r2=findViewById(R.id.rb2);
+        r3=findViewById(R.id.rb3);
+        r4=findViewById(R.id.rb4);
         tv1=findViewById(R.id.tv1);
     }
 
@@ -40,5 +42,14 @@ public class MainActivity extends AppCompatActivity {
                 int resta=v1-v2;
                 tv1.setText("La resta es:"+resta);
             }
+            else
+                if (r3.isChecked()){
+                    int multiplicar=v1*v2;
+                    tv1.setText("La multiplicación es:"+multiplicar);
+                }
+            else
+                if (r4.isChecked()){
+                    int dividir=v1/v2;
+                    tv1.setText("La división es"+dividir);                }
     }
 }

@@ -50,6 +50,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="restar" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="multiplicar" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dividir" />
     </RadioGroup>
 
     <Button
